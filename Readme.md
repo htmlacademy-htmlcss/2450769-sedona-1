@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Катасонов](https://up.htmlacademy.ru/htmlcss-individual/1/user/2450769).
-* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
+* Наставник: [ Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
