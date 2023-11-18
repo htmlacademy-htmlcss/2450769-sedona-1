@@ -10,7 +10,7 @@
       <a class="navigation-logo" href="#">
         <img class="page-header-logo" src="#" alt="Логотип Седона">
       </a>
-      <nav>
+      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -26,11 +26,13 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-search" href="#">
               <span class="visually-hidden">Поиск</span>
+              <img src="#" alt="Поиск">
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
+              <img src="#" alt="Избранное">
               <span class="notification-badge">12</span>
             </a>
           </li>
@@ -41,6 +43,16 @@
 
     <main>
       <h1 class="">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a href="index.html">
+            <img src="#" alt="Главная">
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
 
       <section class="filter">
 
@@ -71,6 +83,106 @@
       </section>
 
       <section class="found">
+
+        <h2 class="found-head">Найдено гостиниц:</h2>
+        <span class="found-number-housing">38</span>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="popular">Сначала популярное</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+
+        <ul class="view">
+          <li class="view-small">
+            <img src="#" alt="Маленькие значки">
+          </li>
+          <li class="view-large">
+            <img src="#" alt="Крупные значки">
+          </li>
+          <li class="view-list">
+            <img src="#" alt="Список">
+          </li>
+        </ul>
+
+        <div class="housing-card">
+          <img class="housing-card-image" src="#" alt="Пещера">
+          <h3 class="housing-card-title">Amara Resort & Spa</h3>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 4000 ₽</p>
+          <a class="housing-card-button button" href="#">Подробнее</a>
+          <button class="button-favourite" type="button">Избранное</button>
+          <img class="star" src="#" alt="звездочка">
+          <p class="rating">Рейтинг:</p>
+          <span class="rating-number">8,5</span>
+        </div>
+        <div class="housing-card">
+          <img class="housing-card-image" src="#" alt="Радуга над горой">
+          <h3 class="housing-card-title">Amara Resort & Spa</h3>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 4000 ₽</p>
+          <a class="housing-card-button button" href="#">Подробнее</a>
+          <button class="button-favourite" type="button">Избранное</button>
+          <img class="star" src="#" alt="звездочка">
+          <p class="rating">Рейтинг:</p>
+          <span class="rating-number">8,5</span>
+        </div>
+        <div class="housing-card">
+          <img class="housing-card-image" src="#" alt="Гора">
+          <h3 class="housing-card-title">Amara Resort & Spa</h3>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 4000 ₽</p>
+          <a class="housing-card-button button" href="#">Подробнее</a>
+          <button class="button-favourite" type="button">Избранное</button>
+          <img class="star" src="#" alt="звездочка">
+          <p class="rating">Рейтинг:</p>
+          <span class="rating-number">8,5</span>
+        </div>
+        <div class="housing-card">
+          <img class="housing-card-image" src="#" alt="Скала под звездами">
+          <h3 class="housing-card-title">Amara Resort & Spa</h3>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 4000 ₽</p>
+          <a class="housing-card-button button" href="#">Подробнее</a>
+          <button class="button-favourite" type="button">Избранное</button>
+          <img class="star" src="#" alt="звездочка">
+          <p class="rating">Рейтинг:</p>
+          <span class="rating-number">8,5</span>
+        </div>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link visually-hidden" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link visually-hidden" href="#">6</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link visually-hidden" href="#">7</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link visually-hidden" href="#">8</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link visually-hidden" href="#">9</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+          </li>
+        </ul>
 
       </section>
 
