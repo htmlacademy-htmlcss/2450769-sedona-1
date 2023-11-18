@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
+
     <header class="main-header">
-      <a class="navigation-logo" href="#">
+      <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="#" alt="Логотип Седона">
       </a>
       <nav class="navigation">
@@ -38,60 +40,56 @@
           </li>
         </ul>
       </nav>
-      <a class="header-button" href="#search">Хочу сюда!</a>
+      <a class="header-button" href="catalog.html">Хочу сюда!</a>
     </header>
 
     <main>
       <h1 class="">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="index.html">
             <img src="#" alt="Главная">
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a href="catalog.html">Гостиницы</a>
+          <a aria-current="page">Гостиницы</a>
         </li>
-      </ul>
+      </ol>
       <img src="#" alt="фон гостиницы Седоны">
 
-      <section class="filter">
-
-        <div class="conveniences">
+      <form action="#" method="get" class="filter">
+        <fieldset class="conveniences">
           <h2 class="conveniences-head">Инфраструктура:</h2>
-          <input type="checkbox" name="pool" id="pool-field" checked>
-          <label for="pool-field">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking-field" checked>
-          <label for="parking-field">Парковка</label>
-          <input type="checkbox" name="wifi" id="wifi-field">
-          <label for="wifi-field">Wi-Fi</label>
-        </div>
+          <input type="checkbox" name="pool" id="pool_field" checked>
+          <label for="pool_field">Бассейн</label>
+          <input type="checkbox" name="parking" id="parking_field" checked>
+          <label for="parking_field">Парковка</label>
+          <input type="checkbox" name="wifi" id="wifi_field">
+          <label for="wifi_field">Wi-Fi</label>
+        </fieldset>
 
-        <div class="housing">
+        <fieldset class="housing">
           <h2 class="housing-head">Тип жилья:</h2>
-          <input type="radio" name="hotel" id="hotel-field" checked>
-          <label for="hotel-field">Гостиница</label>
-          <input type="radio" name="motel" id="motel-field">
-          <label for="motel-field">Мотель</label>
-          <input type="radio" name="apartments" id="apartments-field">
-          <label for="apartments-field">Апартаменты</label>
-        </div>
+          <input type="radio" name="hotel" id="hotel_field" checked>
+          <label for="hotel_field">Гостиница</label>
+          <input type="radio" name="motel" id="motel_field">
+          <label for="motel_field">Мотель</label>
+          <input type="radio" name="apartments" id="apartments_field">
+          <label for="apartments_field">Апартаменты</label>
+        </fieldset>
 
-        <div class="cost">
+        <fieldset class="cost">
           <h2 class="cost-head">Стоимость, ₽:</h2>
-          <label class="cost-min" for="cost-min">0</label>
-          <input type="number" id="cost-min" name="cost-min" placeholder="от" required>
-          <label class="cost-max" for="cost-max">9000</label>
-          <input type="number" id="cost-max" name="cost-max" placeholder="до" required>
-        </div>
-
+          <label class="cost-min" for="cost_min">0</label>
+          <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
+          <label class="cost-max" for="cost_max">9000</label>
+          <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
+        </fieldset>
         <button class="filter-apply" type="button">Применить</button>
         <button class="filter-reset" type="button">Сбросить</button>
-
-      </section>
+      </form>
 
       <section class="found">
-
         <h2 class="found-head">Найдено гостиниц:</h2>
         <span class="found-number-housing">38</span>
 
@@ -113,7 +111,7 @@
           </li>
         </ul>
 
-        <div class="housing-card">
+        <article class="housing-card">
           <img class="housing-card-image" src="#" alt="Пещера">
           <h3 class="housing-card-title">Amara Resort & Spa</h3>
           <p class="housing-type">Гостиница</p>
@@ -123,8 +121,9 @@
           <img class="star" src="#" alt="звездочка">
           <p class="rating">Рейтинг:</p>
           <span class="rating-number">8,5</span>
-        </div>
-        <div class="housing-card">
+        </article>
+
+        <article class="housing-card">
           <img class="housing-card-image" src="#" alt="Радуга над горой">
           <h3 class="housing-card-title">Amara Resort & Spa</h3>
           <p class="housing-type">Гостиница</p>
@@ -134,8 +133,9 @@
           <img class="star" src="#" alt="звездочка">
           <p class="rating">Рейтинг:</p>
           <span class="rating-number">8,5</span>
-        </div>
-        <div class="housing-card">
+        </article>
+
+        <article class="housing-card">
           <img class="housing-card-image" src="#" alt="Гора">
           <h3 class="housing-card-title">Amara Resort & Spa</h3>
           <p class="housing-type">Гостиница</p>
@@ -145,8 +145,9 @@
           <img class="star" src="#" alt="звездочка">
           <p class="rating">Рейтинг:</p>
           <span class="rating-number">8,5</span>
-        </div>
-        <div class="housing-card">
+        </article>
+
+        <article class="housing-card">
           <img class="housing-card-image" src="#" alt="Скала под звездами">
           <h3 class="housing-card-title">Amara Resort & Spa</h3>
           <p class="housing-type">Гостиница</p>
@@ -156,9 +157,9 @@
           <img class="star" src="#" alt="звездочка">
           <p class="rating">Рейтинг:</p>
           <span class="rating-number">8,5</span>
-        </div>
+        </article>
 
-        <ul class="pagination">
+        <ol class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -189,9 +190,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-          </li>
-        </ul>
-
+        </ol>
       </section>
 
       <section class="subscribe">
@@ -199,13 +198,12 @@
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-form-name">
-            <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-            <input type="text" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="user_email">Ваш e-mail</label>
+            <input type="text" id="user_email" name="user-email" placeholder="Ваш e-mail">
           </p>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
-
     </main>
 
     <footer class="main-footer">

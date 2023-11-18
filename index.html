@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
+
     <header class="main-header">
-      <a class="navigation-logo" href="#">
+      <a class="navigation-logo" aria-current="page">
         <img class="page-header-logo" src="#" alt="Логотип Седона">
       </a>
-      <nav>
+      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -47,6 +49,7 @@
         <h1 class="visually-hidden">Гостиницы Седона</h1>
         <img src="#" alt="Горы">
         <img src="#" alt="Welcome to the gorgeous Sedona, beacause the Grand Canyon sucks!">
+        <img src="#" alt="Дивайдер">
       </section>
 
       <section class="advantages">
@@ -105,7 +108,7 @@
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
+        <a class="search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribe">
@@ -114,8 +117,8 @@
         <img src="#" alt="фон подписки">
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-form-name">
-            <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-            <input type="text" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="user_email">Ваш e-mail</label>
+            <input type="text" id="user_email" name="user-email" placeholder="Ваш e-mail">
           </p>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
@@ -145,7 +148,6 @@
       <a href="https://htmlacademy.ru/">
         <img src="#" alt="htmlacademy">
       </a>
-
 
     </footer>
   </body>
