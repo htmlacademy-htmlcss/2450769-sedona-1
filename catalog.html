@@ -77,8 +77,15 @@
         </div>
 
         <div class="cost">
-
+          <h2 class="cost-head">Стоимость, ₽:</h2>
+          <label class="cost-min" for="cost-min">0</label>
+          <input type="number" id="cost-min" name="cost-min" placeholder="от" required>
+          <label class="cost-max" for="cost-max">9000</label>
+          <input type="number" id="cost-max" name="cost-max" placeholder="до" required>
         </div>
+
+        <button class="filter-apply" type="button">Применить</button>
+        <button class="filter-reset" type="button">Сбросить</button>
 
       </section>
 
