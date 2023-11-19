@@ -21,7 +21,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">О Гостиницы</a>\
+            <a class="navigation-link" href="catalog.html">О Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -52,41 +52,40 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a aria-current="page">Гостиницы</a>
+          <a href="" aria-current="page">Гостиницы</a>
         </li>
       </ol>
-      <img src="#" alt="фон гостиницы Седоны">
 
-      <form action="#" method="get" class="filter">
+      <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
         <fieldset class="conveniences">
-          <h2 class="conveniences-head">Инфраструктура:</h2>
-          <input type="checkbox" name="pool" id="pool_field" checked>
+          <legend class="conveniences-head">Инфраструктура:</legend>
+          <input type="checkbox" name="infrastructure" value="pool" id="pool_field" checked>
           <label for="pool_field">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking_field" checked>
+          <input type="checkbox" name="infrastructure" value="parking" id="parking_field" checked>
           <label for="parking_field">Парковка</label>
-          <input type="checkbox" name="wifi" id="wifi_field">
+          <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field">
           <label for="wifi_field">Wi-Fi</label>
         </fieldset>
 
         <fieldset class="housing">
-          <h2 class="housing-head">Тип жилья:</h2>
-          <input type="radio" name="hotel" id="hotel_field" checked>
+          <legend class="housing-head">Тип жилья:</legend>
+          <input type="radio" name="hotel_type" value="hotel" id="hotel_field" checked>
           <label for="hotel_field">Гостиница</label>
-          <input type="radio" name="motel" id="motel_field">
+          <input type="radio" name="hotel_type" value="motel" id="motel_field">
           <label for="motel_field">Мотель</label>
-          <input type="radio" name="apartments" id="apartments_field">
+          <input type="radio" name="hotel_type" value="apartments" id="apartments_field">
           <label for="apartments_field">Апартаменты</label>
         </fieldset>
 
         <fieldset class="cost">
-          <h2 class="cost-head">Стоимость, ₽:</h2>
+          <legend class="cost-head">Стоимость, ₽:</legend>
           <label class="cost-min" for="cost_min">0</label>
           <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
           <label class="cost-max" for="cost_max">9000</label>
           <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
         </fieldset>
-        <button class="filter-apply" type="button">Применить</button>
-        <button class="filter-reset" type="button">Сбросить</button>
+        <button class="filter-apply" type="submit">Применить</button>
+        <button class="filter-reset" type="reset">Сбросить</button>
       </form>
 
       <section class="found">
@@ -101,13 +100,19 @@
 
         <ul class="view">
           <li class="view-small">
-            <img src="#" alt="Маленькие значки">
+            <button class="view-button" type="button">
+              <span class="visually-hidden">Маленькие значки</span>
+            </button>
           </li>
           <li class="view-large">
-            <img src="#" alt="Крупные значки">
+            <button class="view-button" type="button">
+              <span class="visually-hidden">Крупные значки</span>
+            </button>
           </li>
           <li class="view-list">
-            <img src="#" alt="Список">
+            <button class="view-button" type="button">
+              <span class="visually-hidden">Список</span>
+            </button>
           </li>
         </ul>
 
@@ -211,17 +216,17 @@
       <ul class="social">
         <li class="social-item">
           <a href="#">
-            <img src="#" alt="ВК">
+            <span class="visually-hidden">ВК</span>
           </a>
         </li>
         <li class="social-item">
           <a href="#">
-            <img src="#" alt="Telegramm">
+            <span class="visually-hidden">Telegramm</span>
           </a>
         </li>
         <li class="social-item">
           <a href="#">
-            <img src="#" alt="Youtube">
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
