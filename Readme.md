@@ -1,43 +1,85 @@
 # Личный проект «Седона»
 
+[![Project check][check-image]][check-url]
+
 * Студент: [Андрей Катасонов](https://up.htmlacademy.ru/htmlcss-individual/1/user/2450769).
 * Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
+## Установка зависимостей проекта
 
----
+В локальном репозитории уже можно писать разметку страниц, стили и создавать прочие файлы. Но разрабатывать проект будет удобнее с дополнительными инструментами (зависимостями). А для этого их установить.
 
-### Памятка
+### 1. Терминал
 
-#### 1. Зарегистрируйтесь на Гитхабе
+Для установки зависимостей понадобится терминал. В Linux и macOS он уже есть, а в Windows лучше установить _git-bash_, который идёт в комплекте с самим [Git](https://git-scm.com/download/windows).
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+### 2. Node.js
 
-#### 2. Создайте форк
+Зависимости работают в среде _node.js_, которую тоже нужно установить, но лучше не с помощью установщика с официального сайта, а через менеджер версий ноды — nvm. Для его установка выполни в терминале:
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/2450769-sedona-1) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
+Перезапусти терминал и убедись, что _nvm_ работает:
 
-Получится вот так:
+```shell
+nvm -v
+```
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037953-6a8a7384-7bae-11e7-83ac-59603b1d696c.jpg">
+Команда должна вывести версию _nvm_ — `0.39.5`.
 
-#### 3. Клонируйте репозиторий на свой компьютер
+Теперь установи сам _ноду_:
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
+```shell
+nvm install --lts --default
+```
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037955-6c20c16c-7bae-11e7-9e1a-c52010042976.jpg">
+После этого выполни:
 
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+```shell
+node -v
+```
 
-#### 4. Начинайте обучение!
+Команда должна вывести версию _node.js_, например `v20.9.0`, что означает успешность установки.
+
+### 3. Зависимости
+
+Вместе с нодой стал доступен её менеджер пакетов — _npm_. Но мы будем использовать его альтернативу — _pnpm_. Чтобы его включить достаточно активировать _corepack_ (часть _node.js_):
+
+```shell
+corepack enable
+```
+
+После этого для установки зависимостей проекта в терминале, находясь в директории проекта, выполни:
+
+```shell
+pnpm i
+```
+
+### 3. Работа с проектом
+
+После установки зависимостей можно запускать линтинг:
+
+```shell
+pnpm lint
+```
+
+И сборку для разработки:
+
+```shell
+pnpm start
+```
+
+При этом запустится и локальный сервер, а в брауезере откроется разрабатываемый сайт и будет обновляться при обновлении файлов в проекте.
 
 ---
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Профессиональная вёрстка сайтов](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Профессиональная вёрстка сайтов](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+
+[check-image]: https://github.com/htmlacademy-htmlcss/2450769-sedona-1/workflows/Project%20check/badge.svg?branch=master
+[check-url]: https://github.com/htmlacademy-htmlcss/2450769-sedona-1/actions

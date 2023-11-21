@@ -1,0 +1,36 @@
+{
+  "name": "2450769-sedona-1",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": "^18.12 || ^20.9",
+    "pnpm": "8"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not op_mini all",
+    "not and_uc > 0",
+    "not < 0.2%"
+  ],
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:spaces": "ec",
+    "lint:markup": "html-validator --quiet",
+    "lint:styles": "stylelint **/*.css",
+    "lint": "pnpm /^lint:/"
+  },
+  "devDependencies": {
+    "browserslist": "^4.22.1",
+    "browserslist-to-esbuild": "^1.2.0",
+    "editorconfig-checker": "^5.1.2",
+    "lightningcss": "^1.22.1",
+    "stylelint": "^15.11.0",
+    "stylelint-config-htmlacademy": "^2.0.6",
+    "vite": "^5.0.1",
+    "w3c-html-validator": "1.6.1"
+  }
+}
