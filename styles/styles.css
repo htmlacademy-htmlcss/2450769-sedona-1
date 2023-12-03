@@ -13,3 +13,70 @@
   font-display: swap;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
+
+body {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navigation {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.header-button {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.navigation-user-search {
+  background-image: url(../images/icons/search.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-user-link-favorite {
+  background-image: url(../images/icons/heart.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.notification-badge {
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.notification-badge-number {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  color: #fff;
+}
+
+.visually-hidden {
+  display: none;
+}
