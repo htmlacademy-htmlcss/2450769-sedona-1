@@ -12,19 +12,19 @@
   <body>
 
     <header class="main-header">
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-logo" href="index.html" aria-current="page">
         <img class="page-header-logo" src="images/logo.svg" alt="Логотип Седона" width="140" height="70">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html" aria-current="page">О Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">О Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -36,7 +36,7 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="notification-badge">12</span>
+              <div class="notification-badge"><span class="notification-badge-number">12</span></div>
             </a>
           </li>
         </ul>
