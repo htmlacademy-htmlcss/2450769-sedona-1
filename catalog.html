@@ -45,49 +45,48 @@
     </header>
 
     <main>
-      <h1 class="">Гостиницы Седоны</h1>
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a href="index.html">
-            <span class="visually-hidden">Главная</span>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a href="catalog.html" aria-current="page">Гостиницы</a>
-        </li>
-      </ol>
-
-      <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
-        <fieldset class="conveniences">
-          <legend class="conveniences-head">Инфраструктура:</legend>
-          <input type="checkbox" name="infrastructure" value="pool" id="pool_field" checked>
-          <label for="pool_field">Бассейн</label>
-          <input type="checkbox" name="infrastructure" value="parking" id="parking_field" checked>
-          <label for="parking_field">Парковка</label>
-          <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field">
-          <label for="wifi_field">Wi-Fi</label>
-        </fieldset>
-
-        <fieldset class="housing">
-          <legend class="housing-head">Тип жилья:</legend>
-          <input type="radio" name="hotel_type" value="hotel" id="hotel_field" checked>
-          <label for="hotel_field">Гостиница</label>
-          <input type="radio" name="hotel_type" value="motel" id="motel_field">
-          <label for="motel_field">Мотель</label>
-          <input type="radio" name="hotel_type" value="apartments" id="apartments_field">
-          <label for="apartments_field">Апартаменты</label>
-        </fieldset>
-
-        <fieldset class="cost">
-          <legend class="cost-head">Стоимость, ₽:</legend>
-          <label class="cost-min" for="cost_min">0</label>
-          <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
-          <label class="cost-max" for="cost_max">9000</label>
-          <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
-        </fieldset>
-        <button class="filter-apply" type="submit">Применить</button>
-        <button class="filter-reset" type="reset">Сбросить</button>
-      </form>
+      <section class="main">
+        <h1 class="sedona">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item-home">
+            <a href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a id="breadcrumbs_item" href="catalog.html" aria-current="page">Гостиницы</a>
+          </li>
+        </ol>
+        <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
+          <fieldset class="conveniences">
+            <legend class="conveniences-head">Инфраструктура:</legend>
+            <input type="checkbox" name="infrastructure" value="pool" id="pool_field" checked>
+            <label for="pool_field">Бассейн</label>
+            <input type="checkbox" name="infrastructure" value="parking" id="parking_field" checked>
+            <label for="parking_field">Парковка</label>
+            <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field">
+            <label for="wifi_field">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="housing">
+            <legend class="housing-head">Тип жилья:</legend>
+            <input type="radio" name="hotel_type" value="hotel" id="hotel_field" checked>
+            <label for="hotel_field">Гостиница</label>
+            <input type="radio" name="hotel_type" value="motel" id="motel_field">
+            <label for="motel_field">Мотель</label>
+            <input type="radio" name="hotel_type" value="apartments" id="apartments_field">
+            <label for="apartments_field">Апартаменты</label>
+          </fieldset>
+          <fieldset class="cost">
+            <legend class="cost-head">Стоимость, ₽:</legend>
+            <label class="cost-min" for="cost_min">0</label>
+            <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
+            <label class="cost-max" for="cost_max">9000</label>
+            <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
+          </fieldset>
+          <button class="filter-apply" type="submit">Применить</button>
+          <button class="filter-reset" type="reset">Сбросить</button>
+        </form>
+      </section>
 
       <section class="found">
         <h2 class="lead found-head">Найдено гостиниц:</h2>
