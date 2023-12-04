@@ -20,6 +20,7 @@ body {
   line-height: 21px;
   color: #333;
   background-color: #fff;
+  font-style: normal;
 }
 
 a {
@@ -63,7 +64,7 @@ ul {
 }
 
 .notification-badge {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -75,6 +76,99 @@ ul {
   font-weight: 400;
   line-height: 10px;
   color: #fff;
+}
+
+.hero {
+  background-color: #82b3d3;
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 485px;
+}
+
+.lead {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333;
+}
+
+.subscribe-title .subscribe-description {
+  color: #fff;
+}
+
+.subscribe {
+  background-image: url(../images/Subscribe.jpg);
+  background-color: #82b3d3;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 415px;
+}
+
+.subscribe_catalog {
+  background-image:none;
+  background-color: #fff
+}
+
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+
+}
+
+.advantages-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 385px;
+}
+
+.infrastructure-item {
+  width: 400px;
+  height: 385px;
+}
+
+.road {
+  background-color: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-item-wide {
+  background-color: #82b3d3;
+  height: 385px;
+  width: 1200px;
+}
+
+.search-button {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+  background-color: #756157;
+  border-radius: 4px;
 }
 
 .visually-hidden {
