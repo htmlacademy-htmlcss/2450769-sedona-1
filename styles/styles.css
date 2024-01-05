@@ -361,6 +361,10 @@ label.cost-min,
   border-radius: 4px;
   text-align: center;
 }
+
+.housing-card-image {
+  background-color: #82b3d3;
+}
 /*
 .visually-hidden {
   position: fixed;
