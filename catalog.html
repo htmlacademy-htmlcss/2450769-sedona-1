@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="/2450769-sedona-1/assets/favicon-OPz_W7mE.ico">
-    <link rel="stylesheet" crossorigin href="/2450769-sedona-1/assets/styles-0esFcpjT.css">
+    <link rel="stylesheet" crossorigin href="/2450769-sedona-1/assets/styles-_7KqNQb5.css">
   </head>
 
   <body>
@@ -35,7 +35,7 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="notification-badge">12</span>
+              <div class="notification-badge"><span class="notification-badge-number">12</span></div>
             </a>
           </li>
         </ul>
@@ -44,53 +44,52 @@
     </header>
 
     <main>
-      <h1 class="">Гостиницы Седоны</h1>
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a href="index.html">
-            <span class="visually-hidden">Главная</span>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a href="catalog.html" aria-current="page">Гостиницы</a>
-        </li>
-      </ol>
-
-      <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
-        <fieldset class="conveniences">
-          <legend class="conveniences-head">Инфраструктура:</legend>
-          <input type="checkbox" name="infrastructure" value="pool" id="pool_field" checked>
-          <label for="pool_field">Бассейн</label>
-          <input type="checkbox" name="infrastructure" value="parking" id="parking_field" checked>
-          <label for="parking_field">Парковка</label>
-          <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field">
-          <label for="wifi_field">Wi-Fi</label>
-        </fieldset>
-
-        <fieldset class="housing">
-          <legend class="housing-head">Тип жилья:</legend>
-          <input type="radio" name="hotel_type" value="hotel" id="hotel_field" checked>
-          <label for="hotel_field">Гостиница</label>
-          <input type="radio" name="hotel_type" value="motel" id="motel_field">
-          <label for="motel_field">Мотель</label>
-          <input type="radio" name="hotel_type" value="apartments" id="apartments_field">
-          <label for="apartments_field">Апартаменты</label>
-        </fieldset>
-
-        <fieldset class="cost">
-          <legend class="cost-head">Стоимость, ₽:</legend>
-          <label class="cost-min" for="cost_min">0</label>
-          <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
-          <label class="cost-max" for="cost_max">9000</label>
-          <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
-        </fieldset>
-        <button class="filter-apply" type="submit">Применить</button>
-        <button class="filter-reset" type="reset">Сбросить</button>
-      </form>
+      <section class="main">
+        <h1 class="sedona">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item-home">
+            <a href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-hotel" href="catalog.html" aria-current="page">Гостиницы</a>
+          </li>
+        </ol>
+        <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
+          <fieldset class="conveniences">
+            <legend class="conveniences-head">Инфраструктура:</legend>
+            <input type="checkbox" name="infrastructure" value="pool" id="pool_field" checked>
+            <label for="pool_field">Бассейн</label>
+            <input type="checkbox" name="infrastructure" value="parking" id="parking_field" checked>
+            <label for="parking_field">Парковка</label>
+            <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field">
+            <label for="wifi_field">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="housing">
+            <legend class="housing-head">Тип жилья:</legend>
+            <input type="radio" name="hotel_type" value="hotel" id="hotel_field" checked>
+            <label for="hotel_field">Гостиница</label>
+            <input type="radio" name="hotel_type" value="motel" id="motel_field">
+            <label for="motel_field">Мотель</label>
+            <input type="radio" name="hotel_type" value="apartments" id="apartments_field">
+            <label for="apartments_field">Апартаменты</label>
+          </fieldset>
+          <fieldset class="cost">
+            <legend class="cost-head">Стоимость, ₽:</legend>
+            <label class="cost-min" for="cost_min">0</label>
+            <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
+            <label class="cost-max" for="cost_max">9000</label>
+            <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
+          </fieldset>
+          <button class="filter-apply" type="submit">Применить</button>
+          <button class="filter-reset" type="reset">Сбросить</button>
+        </form>
+      </section>
 
       <section class="found">
-        <h2 class="found-head">Найдено гостиниц:</h2>
-        <span class="found-number-housing">38</span>
+        <h2 class="lead found-head">Найдено гостиниц:</h2>
+        <span class="lead found-number-housing">38</span>
 
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
@@ -186,9 +185,9 @@
         </ol>
       </section>
 
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe subscribe_catalog">
+        <h2 class="lead">Подпишитесь на рассылку</h2>
+        <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-form-name">
             <label class="visually-hidden" for="user_email">Ваш e-mail</label>
@@ -200,26 +199,26 @@
     </main>
 
     <footer class="main-footer">
-      <h2 class="visually-hidden">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети, номер и сайт</h2>
       <ul class="social">
         <li class="social-item">
-          <a href="#">
+          <a class="vk" href="#">
             <span class="visually-hidden">ВК</span>
           </a>
         </li>
         <li class="social-item">
-          <a href="#">
+          <a class="tg" href="#">
             <span class="visually-hidden">Telegramm</span>
           </a>
         </li>
         <li class="social-item">
-          <a href="#">
+          <a class="youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812 12 12</a>
-      <a href="https://htmlacademy.ru/">
+      <a class="htmlacademy" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Разработано в .htmlacademy</span>
       </a>
     </footer>
