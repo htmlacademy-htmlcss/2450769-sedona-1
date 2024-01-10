@@ -39,11 +39,41 @@ body {
 }
 
 .navigation {
+  display: flex;
+  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-transform: capitalize;
   color: #000000;
+
+  outline: 5px solid rgb(245, 180, 180);
+  outline-offset: -5px;
+}
+
+.navigation-logo {
+  width: 138px;
+  margin-right: auto;
+
+  outline: 5px solid #a460b5;
+  outline-offset: -5px;
+}
+
+.navigation-list {
+  width: 440px;
+
+  outline: 5px solid #74a7ba;
+  outline-offset: -5px;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+
+  outline: 5px solid #62b097;
+  outline-offset: -5px;
 }
 
 .navigation-user-search {
@@ -84,10 +114,29 @@ body {
   color: #ffffff;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+
+  outline: 5px solid rgb(92, 218, 50);
+  outline-offset: -5px;
+}
+
 .hero {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  outline: 5px solid rgb(50, 215, 218);
+  outline-offset: -5px;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+
+  outline: 5px solid rgb(50, 89, 218);
+  outline-offset: -5px;
 }
 
 .lead {
@@ -107,20 +156,21 @@ body {
   color: #333333;
 }
 
-.subscribe-title .subscribe-description {
-  color: #ffffff;
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  outline: 5px solid rgb(212, 50, 218);
+  outline-offset: -5px;
 }
 
-.subscribe {
-  background-image: url("../images/Subscribe.jpg");
-  background-color: #82b3d3;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
+.advantages-item {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
 
-.subscribe_catalog {
-  background-image: none;
-  background-color: #ffffff;
+  outline: 5px solid rgb(26, 13, 210);
+  outline-offset: -5px;
 }
 
 .advantages-title {
@@ -139,16 +189,28 @@ body {
   text-align: center;
 }
 
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-item-wide {
+  background-color: #82b3d3;
 }
 
 .road {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 20);
 }
 
-.advantages-item-wide {
+.subscribe-title .subscribe-description {
+  color: #ffffff;
+}
+
+.subscribe {
+  background-image: url("../images/Subscribe.jpg");
   background-color: #82b3d3;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe_catalog {
+  background-image: none;
+  background-color: #ffffff;
 }
 
 .phone {
