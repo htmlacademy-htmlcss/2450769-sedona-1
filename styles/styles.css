@@ -23,20 +23,6 @@ body {
   font-style: normal;
 }
 
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
-img {
-  background-color: #82b3d3;
-}
-
 .navigation {
   font-size: 20px;
   line-height: 24px;
@@ -55,11 +41,6 @@ img {
   background-image: url("../images/icons/heart.svg");
   display: block;
   background-repeat: no-repeat;
-}
-
-.navigation-user-link {
-  width: 20px;
-  height: 20px;
 }
 
 .header-button {
@@ -92,8 +73,6 @@ img {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 1200px;
-  height: 485px;
 }
 
 .lead {
@@ -122,8 +101,6 @@ img {
   background-color: #82b3d3;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 1200px;
-  height: 415px;
 }
 
 .subscribe_catalog {
@@ -149,13 +126,6 @@ img {
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
-  height: 385px;
-}
-
-.infrastructure-item {
-  width: 400px;
-  height: 385px;
 }
 
 .road {
@@ -164,8 +134,6 @@ img {
 
 .advantages-item-wide {
   background-color: #82b3d3;
-  height: 385px;
-  width: 1200px;
 }
 
 .phone {
@@ -227,8 +195,6 @@ img {
 
 .main {
   background-image: url("../images/filtr.jpg");
-  width: 1200px;
-  height: auto;
 }
 
 .sedona {
@@ -251,8 +217,6 @@ img {
   background-image: url("../images/icons/home.svg");
   display: block;
   background-repeat: no-repeat;
-  width: 12px;
-  height: 12px;
 }
 
 legend {
@@ -356,8 +320,6 @@ label.cost-min,
 
 .pagination-item {
   background-color: #82b3d3;
-  width: 60px;
-  height: 60px;
   border-radius: 4px;
   text-align: center;
 }
