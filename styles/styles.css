@@ -63,6 +63,9 @@ body {
 
 .navigation-list {
   width: 440px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   outline: 5px solid #74a7ba;
   outline-offset: -5px;
@@ -146,6 +149,9 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 290px;
+  padding-top: 69px;
+  padding-bottom: 25px;
 }
 
 .description {
@@ -154,21 +160,23 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  padding-bottom: 69px;
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
   outline: 5px solid rgb(212, 50, 218);
   outline-offset: -5px;
 }
 
 .advantages-item {
-  width: 400px;
-  background-color: rgba(131, 179, 211, 0.12);
-
+  padding: 103px 85px;
+  max-width: 230px;
+  min-height: 179px;
   outline: 5px solid rgb(26, 13, 210);
   outline-offset: -5px;
 }
@@ -189,38 +197,44 @@ body {
   text-align: center;
 }
 
+.road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.background {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .advantages-item-wide {
   background-color: #82b3d3;
-}
-
-.road {
-  background-color: rgba(131, 179, 211, 20);
-}
-
-.subscribe-title .subscribe-description {
   color: #ffffff;
 }
 
-.subscribe {
-  background-image: url("../images/Subscribe.jpg");
-  background-color: #82b3d3;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+
+.infrastructure-list {
+  display: flex;
 }
 
-.subscribe_catalog {
-  background-image: none;
-  background-color: #ffffff;
+.infrastructure-item {
+  padding: 80px 85px;
+
+  outline: 5px solid rgb(210, 13, 13);
+  outline-offset: -5px;
 }
 
-.phone {
-  font-family: "PT Sans", sans-serif;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
+.search {
+  padding: 96px 304px;
+}
+
+.search-title {
+  padding-top: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.search-description {
+  margin: 0;
+  padding-bottom: 54px;
 }
 
 .search-button {
@@ -232,6 +246,40 @@ body {
   padding: 8px 50px;
   background-color: #756157;
   border-radius: 4px;
+  margin: 0;
+}
+
+.subscribe-title,
+.subscribe-description {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-title {
+  padding-bottom: 20px;
+}
+
+.subscribe-description {
+  padding-bottom: 54px;
+}
+
+.subscribe {
+  background-image: url("../images/Subscribe.jpg");
+  background-color: #82b3d3;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 96px 258px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe_catalog {
+  background-image: none;
+  background-color: #ffffff;
 }
 
 .subscribe-button {
@@ -244,6 +292,18 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
+
+  outline: 5px solid #090909;
+  outline-offset: -5px;
 }
 
 .vk {
@@ -262,6 +322,16 @@ body {
   background-image: url("../images/icons/youtube.svg");
   display: block;
   background-repeat: no-repeat;
+}
+
+.phone {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 
 .htmlacademy {
@@ -404,6 +474,7 @@ label.cost-min,
 .housing-card-image {
   background-color: #82b3d3;
 }
+
 /*
 .visually-hidden {
   position: fixed;
