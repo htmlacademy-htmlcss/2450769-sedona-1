@@ -386,7 +386,6 @@ body {
 .housing-card {
   display: flex;
   width: 340px;
-  height: 438px;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
