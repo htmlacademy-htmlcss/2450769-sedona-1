@@ -29,6 +29,11 @@ body {
   color: #333333;
   background-color: #ffffff;
   font-style: normal;
+}
+
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
 
   outline: 5px solid rgb(218, 50, 50);
   outline-offset: -5px;
@@ -45,8 +50,6 @@ body {
 .navigation {
   display: flex;
   padding: 0;
-  width: 1200px;
-  margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -330,7 +333,7 @@ body {
 }
 
 .phone {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   text-align: center;
   font-size: 40px;
   font-style: normal;
@@ -482,7 +485,7 @@ label.cost-min,
 
 .housing-card-button,
 .button-favourite {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -529,6 +532,7 @@ label.cost-min,
 
 .housing-card-image {
   background-color: #82b3d3;
+  order: -1;
 }
 
 /*
