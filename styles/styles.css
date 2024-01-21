@@ -179,8 +179,9 @@ body {
 }
 
 .hero-img {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  padding: 51px 371px 82px;
+  width: 458px;
 
   outline: 5px solid rgb(50, 89, 218);
   outline-offset: -5px;
@@ -237,6 +238,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
@@ -244,6 +247,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 .road {
@@ -421,11 +425,13 @@ body {
 .filter-button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .found-container {
   display: flex;
-  justify-content: space-around;
+  padding: 50px 70px 0;
+  align-items: end;
 
   outline: 5px solid rgb(56, 13, 210);
   outline-offset: -5px;
@@ -439,11 +445,24 @@ body {
 .found-number-housing {
   margin: 0;
   padding: 0;
+  margin-right: auto;
+}
+
+.select-control {
+  margin-right: 70px;
+}
+
+.view {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .housing-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 40px 70px;
 
   outline: 5px solid rgb(158, 231, 167);
   outline-offset: -5px;
@@ -451,16 +470,59 @@ body {
 
 .housing-card {
   display: flex;
-  width: 340px;
+  width: 298px;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.housing-card:nth-child(3) {
+  margin-right: 0;
+}
+
+.housing-card:last-child {
+  margin-bottom: 0;
+}
+
+.housing-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.housing-type {
+  margin: 0;
+  padding: 0;
+}
+
+.housing-price {
+  margin: 0;
+  padding: 0;
+}
+
+.rating {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination {
   display: flex;
+  list-style-type: none;
+  padding: 40px 70px 60px;
+  margin: 0;
 }
 
 .breadcrumbs-item-hotel {
@@ -503,31 +565,12 @@ label.cost-min,
 .filter-apply {
   background-color: #82b3d3;
   color: #ffffff;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
+  margin-bottom: 32px;
 }
 
 .filter-reset {
   background-color: transparent;
   color: #ffffff;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  border: none;
-}
-
-.housing-card-title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #000000;
 }
 
 .housing-type,
@@ -535,15 +578,6 @@ label.cost-min,
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  color: #333333;
-}
-
-.rating {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
   color: #333333;
 }
 
@@ -564,6 +598,12 @@ label.cost-min,
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  padding: 11px 0 12px;
 }
 
 .pagination-item {
@@ -592,7 +632,6 @@ label.cost-min,
   position: fixed;
   transform: scale(0);
 }
-
 
 /*
 .visually-hidden {
