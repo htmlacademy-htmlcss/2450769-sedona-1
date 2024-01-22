@@ -41,6 +41,8 @@ body {
 
 .main {
   background-image: url("../images/filtr.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   display: block;
   padding: 35px 70px 70px;
 }
@@ -72,6 +74,7 @@ body {
 .navigation-list {
   width: 440px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -354,6 +357,7 @@ body {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
