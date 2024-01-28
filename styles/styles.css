@@ -34,9 +34,6 @@ body {
 .body-container {
   width: 1200px;
   margin: 0 auto;
-
-  outline: 5px solid rgb(218, 50, 50);
-  outline-offset: -5px;
 }
 
 .main {
@@ -59,16 +56,12 @@ body {
   font-weight: 700;
   text-transform: capitalize;
   color: #000000;
-
-  outline: 5px solid rgb(245, 180, 180);
-  outline-offset: -5px;
 }
 
 .navigation-logo {
   width: 138px;
-
-  outline: 5px solid #a460b5;
-  outline-offset: -5px;
+  margin-right: 28px;
+  margin-left: 70px;
 }
 
 .navigation-list {
@@ -80,9 +73,6 @@ body {
   margin: 0;
   padding: 0;
   flex-grow: 1;
-
-  outline: 5px solid #74a7ba;
-  outline-offset: -5px;
 }
 
 .navigation-user {
@@ -92,24 +82,16 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
-
-  outline: 5px solid #62b097;
-  outline-offset: -5px;
 }
 
 .navigation-user-item {
   display: block;
-  outline: 5px solid #afcd5d;
-  outline-offset: -5px;
 }
 
 .navigation-link {
   display: block;
   padding: 20px 16px;
   text-decoration: none;
-
-  outline: 5px solid #afcd5d;
-  outline-offset: -5px;
 }
 
 .navigation-user-search {
@@ -144,6 +126,7 @@ body {
 }
 
 .header-button {
+  margin-right: 70px;
   color: #ffffff;
   background-color: #756157;
 }
@@ -166,9 +149,6 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-
-  outline: 5px solid rgb(92, 218, 50);
-  outline-offset: -5px;
 }
 
 .hero {
@@ -176,18 +156,12 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin-bottom: 69px;
-
-  outline: 5px solid rgb(50, 215, 218);
-  outline-offset: -5px;
 }
 
 .hero-img {
   display: flex;
   padding: 51px 371px 82px;
   width: 458px;
-
-  outline: 5px solid rgb(50, 89, 218);
-  outline-offset: -5px;
 }
 
 .lead {
@@ -213,25 +187,20 @@ body {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   margin-top: 21px;
   margin-bottom: 64px;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
-
-  outline: 5px solid rgb(212, 50, 218);
-  outline-offset: -5px;
 }
 
 .advantages-item {
   padding: 103px 85px;
   max-width: 230px;
   min-height: 179px;
-
-  outline: 5px solid rgb(26, 13, 210);
-  outline-offset: -5px;
+  color: #000000;
 }
 
 .advantages-title {
@@ -239,7 +208,6 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
@@ -253,6 +221,24 @@ body {
   margin: 0;
 }
 
+.advantages-item:has(img) {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: subgrid;
+  padding: 0;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantages-text {
+  padding: 103px 85px;
+}
+
+.advantages-img {
+  grid-column: span 2;
+  object-fit: cover;
+}
+
 .road {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -260,12 +246,6 @@ body {
 .background {
   background-color: rgba(131, 179, 211, 0.12);
 }
-
-.advantages-item-wide {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
-
 
 .infrastructure-list {
   display: flex;
@@ -276,9 +256,6 @@ body {
 
 .infrastructure-item {
   padding: 80px 85px;
-
-  outline: 5px solid rgb(210, 13, 13);
-  outline-offset: -5px;
 }
 
 .infrastructure > .description {
@@ -286,6 +263,8 @@ body {
 }
 
 .search {
+  display: flex;
+  flex-direction: column;
   padding: 96px 304px;
 }
 
@@ -301,6 +280,8 @@ body {
 }
 
 .search-button {
+  display: inline-block;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #756157;
 }
@@ -350,9 +331,6 @@ body {
   padding: 0;
   width: 1200px;
   margin: 0 auto;
-
-  outline: 5px solid #090909;
-  outline-offset: -5px;
 }
 
 .social {
@@ -435,10 +413,7 @@ body {
 .found-container {
   display: flex;
   padding: 50px 70px 0;
-  align-items: end;
-
-  outline: 5px solid rgb(56, 13, 210);
-  outline-offset: -5px;
+  justify-content: center;
 }
 
 .found-head {
@@ -454,6 +429,9 @@ body {
 
 .select-control {
   margin-right: 70px;
+  border-radius: 4px;
+  border: 2px solid #e5e5e5;
+  padding: 14px 20px;
 }
 
 .view {
@@ -464,35 +442,25 @@ body {
 }
 
 .housing-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 340px);
   padding: 40px 70px;
-
-  outline: 5px solid rgb(158, 231, 167);
-  outline-offset: -5px;
+  margin: 0;
 }
 
 .housing-card {
-  display: flex;
-  width: 298px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  width: 300px;
   padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.housing-card:nth-child(3) {
-  margin-right: 0;
-}
-
-.housing-card:last-child {
-  margin-bottom: 0;
 }
 
 .housing-card-title {
+  grid-column: 1 / -1;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -509,6 +477,31 @@ body {
 .housing-price {
   margin: 0;
   padding: 0;
+  text-align: end;
+}
+
+.housing-card-image {
+  object-fit: cover;
+  order: -1;
+  background-color: #82b3d3;
+}
+
+.housing-card-button {
+  padding: 8px 0;
+  color: #ffffff;
+  text-align: center;
+  background-color: #756157;
+}
+
+.button-favourite {
+  padding: 8px 0;
+  color: #ffffff;
+  text-align: center;
+  background-color: #82b3d3;
+}
+
+.green {
+  background-color: #7db54f;
 }
 
 .rating {
@@ -520,6 +513,19 @@ body {
   color: #333333;
   margin: 0;
   padding: 0;
+}
+
+.rating-number {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.rating-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #f2f2f2;
 }
 
 .pagination {
@@ -585,16 +591,6 @@ label.cost-min,
   color: #333333;
 }
 
-.button-favourite {
-  color: #ffffff;
-  background-color: #82b3d3;
-}
-
-.housing-card-button {
-  color: #ffffff;
-  background-color: #756157;
-}
-
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
@@ -625,11 +621,6 @@ label.cost-min,
 
 .subscribe-description-catalog {
   color: #000000;
-}
-
-.housing-card-image {
-  background-color: #82b3d3;
-  order: -1;
 }
 
 .visually-hidden {
