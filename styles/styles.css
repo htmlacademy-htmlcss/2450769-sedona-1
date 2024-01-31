@@ -201,6 +201,7 @@ body {
   max-width: 230px;
   min-height: 179px;
   color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
@@ -239,11 +240,11 @@ body {
   object-fit: cover;
 }
 
-.road {
-  background-color: rgba(131, 179, 211, 0.2);
+.advantages-item:nth-child(even of:has(img)) img {
+  order: -1;
 }
 
-.background {
+.advantages-item:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -256,6 +257,10 @@ body {
 
 .infrastructure-item {
   padding: 80px 85px;
+}
+
+.infrastructure-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .infrastructure > .description {
