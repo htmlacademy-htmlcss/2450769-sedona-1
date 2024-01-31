@@ -15,7 +15,7 @@
     "not < 0.2%"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -25,14 +25,14 @@
     "lint": "pnpm /^lint:/"
   },
   "devDependencies": {
-    "browserslist": "^4.22.2",
+    "browserslist": "^4.22.3",
     "browserslist-to-esbuild": "^2.1.1",
     "editorconfig-checker": "^5.1.2",
-    "husky": "^8.0.3",
-    "lightningcss": "^1.22.1",
-    "stylelint": "^16.1.0",
-    "stylelint-config-htmlacademy": "^4.0.1",
-    "vite": "^5.0.11",
+    "husky": "^9.0.7",
+    "lightningcss": "^1.23.0",
+    "stylelint": "^16.2.0",
+    "stylelint-config-htmlacademy": "^4.0.4",
+    "vite": "^5.0.12",
     "w3c-html-validator": "1.6.4"
   }
 }
