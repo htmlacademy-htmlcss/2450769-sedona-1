@@ -166,7 +166,7 @@ body {
   text-align: center;
   position: absolute;
   top: 5px;
-  bottom: 5px;
+  bottom: auto;
   right: 5px;
   left: 4px;
 }
@@ -480,10 +480,29 @@ body {
 }
 
 .select-control {
+  width: 292px;
   margin-right: 70px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   padding: 14px 20px;
+  appearance: none;
+  background-image: url("../images/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .view {
@@ -491,6 +510,44 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.view-button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 0;
+  margin-right: 8px;
+}
+
+.view-button:hover,
+.view-button:active {
+  border: 2px solid #000000;
+}
+
+.view-button:focus {
+  border: 2px solid #68a2ca;
+}
+
+.view-list > .view-button {
+  background-image: url("../images/icons/variant=list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+}
+
+.view-small > .view-button {
+  background-image: url("../images/icons/variant=tile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view-large > .view-button {
+  background-image: url("../images/icons/variant=slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .housing-container {
