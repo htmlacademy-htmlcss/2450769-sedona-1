@@ -34,6 +34,7 @@ body {
 .body-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main {
@@ -187,6 +188,10 @@ body {
   display: flex;
   padding: 51px 371px 82px;
   width: 458px;
+  background-image: url("../images/icons/divider.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
 }
 
 .lead {
@@ -378,10 +383,9 @@ body {
 
 .main-footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 0;
-  width: 1200px;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
   margin: 0 auto;
 }
 
@@ -389,24 +393,36 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .vk {
   background-image: url("../images/icons/vk.svg");
   display: block;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 47px;
+  height: 40px;
 }
 
 .tg {
   background-image: url("../images/icons/tg.svg");
   display: block;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 47px;
+  height: 40px;
 }
 
 .youtube {
   background-image: url("../images/icons/youtube.svg");
   display: block;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 47px;
+  height: 40px;
 }
 
 .phone {
@@ -417,12 +433,16 @@ body {
   font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .htmlacademy {
   background-image: url("../images/icons/htmlacademy.svg");
   display: block;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 115px;
+  height: 33px;
 }
 
 .sedona {
