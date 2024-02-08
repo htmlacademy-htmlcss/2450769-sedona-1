@@ -368,7 +368,8 @@ body {
 
 .subscribe-form {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  height: 52px;
 }
 
 .subscribe-catalog {
@@ -376,9 +377,27 @@ body {
   background-color: #ffffff;
 }
 
+.text-email {
+  padding: 12px 20px 12px 20px;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
+  border: none;
+  width: 412px;
+  height: 28px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-style: normal;
+}
+
 .subscribe-button {
   background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
   color: #ffffff;
+  padding: 8px 50px;
+  width: 232px;
+  height: 52px;
 }
 
 .main-footer {
