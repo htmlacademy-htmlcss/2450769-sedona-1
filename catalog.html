@@ -63,11 +63,11 @@
             <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
               <fieldset class="conveniences">
                 <legend class="conveniences-head">Инфраструктура:</legend>
-                <input type="checkbox" name="infrastructure" value="pool" id="pool_field" checked>
+                <input type="checkbox" name="infrastructure" value="pool" id="pool_field" class="checkbox-square" checked>
                 <label for="pool_field">Бассейн</label>
-                <input type="checkbox" name="infrastructure" value="parking" id="parking_field" checked>
+                <input type="checkbox" name="infrastructure" value="parking" id="parking_field" class="checkbox-square" checked>
                 <label for="parking_field">Парковка</label>
-                <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field">
+                <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field" class="checkbox-square">
                 <label for="wifi_field">Wi-Fi</label>
               </fieldset>
               <fieldset class="housing">
@@ -85,6 +85,18 @@
                 <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
                 <label class="cost-max" for="cost_max">9000</label>
                 <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="filter-button">
                 <button class="filter-apply button" type="submit">Применить</button>

@@ -105,6 +105,20 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  height: 2px;
+  background-color: #756257;
+}
+
 .navigation-user-search {
   background-image: url("../images/icons/search.svg");
   min-width: 20px;
@@ -565,11 +579,58 @@ body {
 .conveniences {
   display: flex;
   flex-direction: column;
+  border: 0;
+  padding: 0;
+  padding-right: 70px;
+  margin: 0;
 }
 
-.housing {
-  display: flex;
-  flex-direction: column;
+.conveniences-head {
+  padding-bottom: 32px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 94px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+  left: 0;
+  right: 70px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 4px solid #ffffff;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .filter-button {
