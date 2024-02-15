@@ -155,6 +155,81 @@ body {
   cursor: pointer;
 }
 
+.header-button:hover,
+.search-button:hover,
+.housing-card-button:hover,
+.header-button:focus,
+.search-button:focus,
+.housing-card-button:focus {
+  background-color: #615048;
+}
+
+.header-button:active,
+.search-button:active,
+.housing-card-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-button:disabled,
+.search-button:disabled,
+.housing-card-button:disabled {
+  background-color: rgb(229, 229, 229);
+}
+
+.subscribe-button:hover,
+.filter-apply:hover,
+.button-favourite:hover,
+.pagination-link:hover,
+.subscribe-button:focus,
+.filter-apply:focus,
+.button-favourite:focus,
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:active,
+.filter-apply:active,
+.button-favourite:active,
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled,
+.filter-apply:disabled,
+.button-favourite:disabled {
+  background-color: rgb(229, 229, 229);
+}
+
+.green:hover,
+.green:focus {
+  background-color: #6c9e42;
+}
+
+.green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
+}
+
+.filter-reset:hover {
+  opacity: 0.6;
+}
+
+.filter-reset:focus {
+  border: 3px solid rgb(131, 179, 211);
+  border-radius: 4px;
+  outline: none;
+}
+
+.filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-reset:disabled {
+  opacity: 0.1;
+}
+
 .header-button {
   margin-right: 70px;
   color: #ffffff;
