@@ -572,6 +572,21 @@ body {
   background-size: cover;
 }
 
+.breadcrumbs-item-hotel {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 11px;
+  padding-left: 17px;
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center left;
+}
+
 .filter {
   display: flex;
 }
@@ -581,8 +596,7 @@ body {
   flex-direction: column;
   border: 0;
   padding: 0;
-  padding-right: 70px;
-  margin: 0;
+  margin-right: 70px;
 }
 
 .conveniences-head {
@@ -592,7 +606,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 94px;
+  margin-top: 46px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -826,15 +840,6 @@ body {
   list-style-type: none;
   padding: 40px 70px 60px;
   margin: 0;
-}
-
-.breadcrumbs-item-hotel {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 legend {
