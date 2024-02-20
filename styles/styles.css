@@ -467,7 +467,7 @@ body {
 }
 
 .text-email {
-  padding: 12px 20px 12px 20px;
+  padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
   border: none;
@@ -508,12 +508,13 @@ body {
 
 .social-link {
   display: flex;
+  margin-inline: 4px;
 }
 
 .social-link::before {
   content: "";
   display: block;
-  width: 47px;
+  width: 40px;
   height: 40px;
   mask: var(--icon-shape) no-repeat center / contain;
   background-color: #83b3d3;
@@ -527,8 +528,8 @@ body {
   --icon-shape: url("../images/icons/tg.svg");
 }
 
-.social-link-youtube {
-  --icon-shape: url("../images/icons/youtube.svg");
+.social-link-yt {
+  --icon-shape: url("../images/icons/yt.svg");
 }
 
 /*
@@ -552,8 +553,8 @@ body {
   height: 40px;
 }
 
-.youtube {
-  mask-image: url("../images/icons/youtube.svg");
+.yt {
+  mask-image: url("../images/icons/yt.svg");
   display: block;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -564,13 +565,13 @@ body {
 
 .vk:hover,
 .tg:hover,
-.youtube:hover {
+.yt:hover {
   background-color: #68a2ca;
 }
 
 .vk:active,
 .tg:active,
-.youtube:active {
+.yt:active {
   background-color: rgba(104, 162, 202, 0.3);
 }
 */

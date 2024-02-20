@@ -1,7 +1,7 @@
 {
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.detectIndentation": false,
   "editor.guides.bracketPairs": true,
@@ -9,7 +9,6 @@
   "editor.linkedEditing": true,
   "editor.renderWhitespace": "selection",
   "editor.wordWrap": "on",
-
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "*:Zone.Identifier": true,
@@ -18,18 +17,15 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-
   "html.format.indentInnerHtml": true,
   "html.format.indentHandlebars": true,
   "html.format.maxPreserveNewLines": 1,
   "html.format.wrapLineLength": 0,
-
   "stylelint.validate": [
     "css",
     "postcss",
     "scss"
   ],
-
   "svg.preview.boundingBox": true,
   "svg.preview.transparencyGrid": true
 }

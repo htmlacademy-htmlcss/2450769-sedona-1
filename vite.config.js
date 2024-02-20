@@ -14,7 +14,8 @@ setGitHubEnvVar(`PATH_TO_DIST`, PATH_TO_DIST)
 export default defineConfig({
   base: getProjectRoot(),
   build: {
-    cssMinify: `lightningcss`,
+    assetsInlineLimit: 0,
+    cssMinify: undefined,
     emptyOutDir: true,
     outDir: PATH_TO_DIST,
     rollupOptions: {
@@ -26,7 +27,7 @@ export default defineConfig({
     target: browserslistToEsbuild(),
   },
   css: {
-    transformer: `lightningcss`,
+    transformer: `postcss`,
   },
   root: PATH_TO_SOURCE,
   server: {
