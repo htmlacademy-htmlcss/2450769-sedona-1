@@ -116,39 +116,38 @@ body {
   background-color: #756257;
 }
 
-.navigation-user-search {
-  mask-image: url("../images/icons/search.svg");
-  min-width: 20px;
-  min-height: 20px;
+.navigation-user-link {
+  display: flex;
+  margin-inline: 12px;
+}
+
+.navigation-user-link::before {
+  content: "";
   display: block;
-  padding: 22px 12px;
-  mask-repeat: no-repeat;
-  mask-position: center;
+  width: 20px;
+  height: 20px;
+  mask: var(--icon-userlink) no-repeat center / contain;
   background-color: #000000;
 }
 
-.navigation-user-search:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.navigation-user-search {
+  --icon-userlink: url("../images/icons/search.svg");
 }
 
-.navigation-user-link-favorite {
-  background-image: url("../images/icons/heart.svg");
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 20px;
-  min-height: 20px;
-  padding: 22px 12px;
+.navigation-user-favorite {
+  --icon-userlink: url("../images/icons/heart.svg");
   position: relative;
-  margin-right: 20px;
+  margin-right: 32px;
+}
+
+.navigation-user-link:hover::before {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .notification-badge {
   position: absolute;
-  top: 11px;
-  bottom: -11px;
-  right: -20px;
-  left: 20px;
+  top: -11px;
+  right: -8px;
   background-color: #7db54f;
   width: 20px;
   height: 20px;
@@ -516,65 +515,29 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  mask: var(--icon-shape) no-repeat center / contain;
+  mask: var(--icon-social) no-repeat center / contain;
   background-color: #83b3d3;
 }
 
 .social-link-vk {
-  --icon-shape: url("../images/icons/vk.svg");
+  --icon-social: url("../images/icons/vk.svg");
 }
 
 .social-link-tg {
-  --icon-shape: url("../images/icons/tg.svg");
+  --icon-social: url("../images/icons/tg.svg");
 }
 
 .social-link-yt {
-  --icon-shape: url("../images/icons/yt.svg");
+  --icon-social: url("../images/icons/yt.svg");
 }
 
-/*
-.vk {
-  mask-image: url("../images/icons/vk.svg");
-  display: block;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #83b3d3;
-  width: 47px;
-  height: 40px;
-}
-
-.tg {
-  mask-image: url("../images/icons/tg.svg");
-  display: block;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #83b3d3;
-  width: 47px;
-  height: 40px;
-}
-
-.yt {
-  mask-image: url("../images/icons/yt.svg");
-  display: block;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #83b3d3;
-  width: 47px;
-  height: 40px;
-}
-
-.vk:hover,
-.tg:hover,
-.yt:hover {
+.social-link:hover::before {
   background-color: #68a2ca;
 }
 
-.vk:active,
-.tg:active,
-.yt:active {
+.social-link:active::before {
   background-color: rgba(104, 162, 202, 0.3);
 }
-*/
 
 .phone {
   font-family: inherit;
@@ -588,14 +551,25 @@ body {
   color: #000000;
 }
 
-.htmlacademy {
-  mask-image: url("../images/icons/htmlacademy.svg");
+.htmlacademy::before {
+  content: "";
   display: block;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #000000;
   width: 115px;
   height: 33px;
+  mask: var(--icon-htmlacademy) no-repeat center / contain;
+  background-color: #000000;
+}
+
+.htmlacademy {
+  --icon-htmlacademy: url("../images/icons/htmlacademy.svg");
+}
+
+.htmlacademy:hover::before {
+  background-color: #756157;
+}
+
+.htmlacademy:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .phone:hover {
@@ -604,14 +578,6 @@ body {
 
 .phone:active {
   color: rgba(117, 97, 87, 0.3);
-}
-
-.htmlacademy:hover {
-  background-color: #756157;
-}
-
-.htmlacademy:active {
-  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .sedona {
@@ -634,11 +600,26 @@ body {
 }
 
 .breadcrumbs-item-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  --icon-home: url("../images/icons/home.svg");
+}
+
+
+.breadcrumbs-item-home::before {
+  content: "";
   width: 12px;
   height: 12px;
-  background-image: url("../images/icons/home.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: block;
+  mask: var(--icon-home) no-repeat center / contain;
+  background-color: #ffffff;
 }
 
 .breadcrumbs-item-hotel {
@@ -662,6 +643,14 @@ body {
 
 .breadcrumbs-item-hotel:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-item-home:hover::before {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item-home:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filter {
@@ -827,25 +816,43 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
-  width: 300px;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
-  background-image: url("../images/icons/star.svg"), url("../images/icons/star.svg"), url("../images/icons/star.svg"), url("../images/icons/star.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 391px, 40px 391px, 60px 391px, 80px 391px;
 }
 
-.housing-card:nth-child(3) {
-  background-image: url("../images/icons/star.svg"), url("../images/icons/star.svg"), url("../images/icons/star.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 391px, 40px 391px, 60px 391px;
+.star {
+  background-image: url("../images/icons/star.svg");
+  background-repeat: repeat-x;
+  background-position: left;
+  background-size: 24px 17px;
+  width: calc(24px * var(--star-count));
 }
 
-.housing-card:nth-child(4) {
-  background-image: url("../images/icons/star.svg"), url("../images/icons/star.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 391px, 40px 391px;
+
+.star::before {
+  content: "";
+  width: calc(24px * var(--star-count));
+}
+
+.stars-1 {
+  --star-count: 1;
+}
+
+.stars-2 {
+  --star-count: 2;
+}
+
+.stars-3 {
+  --star-count: 3;
+}
+
+.stars-4 {
+  --star-count: 4;
+}
+
+.stars-5 {
+  --star-count: 5;
 }
 
 .housing-card-title {
@@ -915,6 +922,7 @@ body {
   align-items: center;
   border-radius: 4px;
   background-color: #f2f2f2;
+  padding: 9px 22px 8px 23px;
 }
 
 .pagination {
@@ -978,6 +986,7 @@ label.cost-min,
   height: 60px;
   text-decoration: none;
   padding: 11px 0 12px;
+  border-radius: 4px;
 }
 
 .pagination-item {
