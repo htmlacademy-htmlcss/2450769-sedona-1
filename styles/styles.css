@@ -657,20 +657,109 @@ body {
   display: flex;
 }
 
+input[type="checkbox"] {
+  margin: 0;
+  margin-right: 16px;
+  appearance: none;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  background: url("../images/icons/check.svg") no-repeat center / cover;
+  transform: scale(var(--is-checked, 0));
+  transition: transform 0.1s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  --is-checked: 1;
+}
+
+input[type="radio"] {
+  margin: 0;
+  margin-right: 16px;
+  appearance: none;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+input[type="radio"]::before {
+  content: "";
+  background: url("../images/icons/radio.svg") no-repeat center / cover;
+  transform: scale(var(--is-checked, 0));
+  transition: transform 0.1s ease-in-out;
+}
+
+input[type="radio"]:checked {
+  --is-checked: 1;
+}
+
 .conveniences {
   display: flex;
   flex-direction: column;
   border: 0;
   padding: 0;
+  margin: 0;
   margin-right: 70px;
 }
 
 .conveniences-head {
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.checked-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.checked-item:hover {
+  opacity: 0.6;
+}
+
+.checked-item:disabled {
+  opacity: 0.3;
+}
+
+.housing {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 140px;
+}
+
+.housing-head {
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.cost {
+  width: 288px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.cost-head {
+  padding: 0;
   padding-bottom: 32px;
 }
 
 .range-scale {
+  width: 278px;
   position: relative;
+  left: 10px;
   height: 4px;
   margin-top: 46px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -1014,6 +1103,53 @@ label.cost-min,
 .subscribe-description-catalog {
   color: #000000;
 }
+/*
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/icons/cros.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+*/
 
 .visually-hidden {
   position: fixed;
