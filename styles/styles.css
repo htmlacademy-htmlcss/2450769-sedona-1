@@ -174,7 +174,7 @@ body {
   padding: 8px 50px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   border-radius: 4px;
   text-decoration: none;
@@ -735,7 +735,7 @@ input[type="radio"]:checked {
   border: 0;
   padding: 0;
   margin: 0;
-  margin-right: 140px;
+  margin-right: 150px;
 }
 
 .housing-head {
@@ -754,6 +754,54 @@ input[type="radio"]:checked {
 .cost-head {
   padding: 0;
   padding-bottom: 32px;
+}
+
+.rage-cost {
+  display: flex;
+  flex-direction: row;
+}
+
+.rage-cost-item {
+  position: relative;
+}
+
+.rage-cost span {
+  position: absolute;
+  content: "от";
+  top: 12px;
+  right: 20px;
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+
+.rage-cost input {
+  appearance: none;
+  border: none;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px;
+  width: 103px;
+}
+
+.cost-min {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.cost-max {
+  border-radius: 0 4px 4px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .range-scale {
@@ -802,6 +850,8 @@ input[type="radio"]:checked {
 }
 
 .filter-button {
+  font-weight: 400;
+  width: 191px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1047,6 +1097,7 @@ label.cost-min,
   background-color: #82b3d3;
   color: #ffffff;
   margin-bottom: 32px;
+  margin-top: 45px;
 }
 
 .filter-reset {

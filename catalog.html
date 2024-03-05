@@ -95,10 +95,20 @@
               </fieldset>
               <fieldset class="cost">
                 <legend class="cost-head">Стоимость, ₽:</legend>
-                <label class="cost-min" for="cost_min">0</label>
-                <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
-                <label class="cost-max" for="cost_max">9000</label>
-                <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
+                <div class="rage-cost">
+                  <div class="rage-cost-item">
+                    <label for="cost_min">
+                      <input class="cost-min" type="number" id="cost_min" name="cost-min" placeholder="от" value="0" required>
+                      <span>от</span>
+                    </label>
+                  </div>
+                  <div class="rage-cost-item">
+                    <label for="cost_max">
+                      <input class="cost-max" type="number" id="cost_max" name="cost-max" placeholder="до" value="9000" required>
+                      <span>до</span>
+                    </label>
+                  </div>
+                </div>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
