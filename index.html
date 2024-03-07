@@ -164,7 +164,37 @@
           </button>
           <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
           <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+            <div class="date">
+              <label class="arrival-date modal-title" for="arrival">Дата Заезда:</label>
+              <input class="text-input" id="arrival" type="text" placeholder="27 апреля 2020">
+              <p class="date-text red-text">Мы не можем отправить вас в прошлое.</p>
+              <label class="departure-date modal-title" for="departure">Дата Выезда:</label>
+              <input class="text-input" id="departure" type="text" placeholder="1 сентября 2021">
+              <p class="date-text">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="number-people">
+              <div class="adults-input">
+                <label class="adults modal-title" for="adults">Взрослые:</label>
+                <button class="number-button minus" type="button"></button>
+                <input class="number-input" id="adults" type="number" placeholder="2">
+                <button class="number-button plus" type="button"></button>
+              </div>
+              <div class="children-information">
+                <label class="children modal-title" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <button class="number-button minus" type="button"></button>
+                <input class="number-input" id="children" type="number" placeholder="2">
+                <button class="number-button plus" type="button"></button>
+              </div>
+
+            </div>
+            <button class="button button-blue find" type="submit">Найти</button>
           </section>
         </div>
       </div>
