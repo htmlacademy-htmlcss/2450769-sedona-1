@@ -790,11 +790,13 @@ input[type="radio"]:checked {
 }
 
 .cost-min {
+  appearance: textfield;
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
 }
 
 .cost-max {
+  appearance: textfield;
   border-radius: 0 4px 4px 0;
 }
 
@@ -1163,6 +1165,10 @@ label.cost-min,
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-open {
   visibility: hidden;
 }
 
@@ -1248,6 +1254,7 @@ label.cost-min,
 }
 
 .number-input {
+  appearance: textfield;
   height: 48px;
   color: #000000;
   font-weight: 700;
