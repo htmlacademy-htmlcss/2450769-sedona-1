@@ -1329,6 +1329,10 @@ label.cost-min,
   align-items: center;
 }
 
+.children {
+  margin-right: 36px;
+}
+
 .children-information,
 .adults-input {
   display: flex;
