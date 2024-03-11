@@ -1,5 +1,6 @@
-export default function () {
+export default function (ctx) {
   return {
+    map: ctx.env === `development`,
     plugins: {
       "postcss-import": {},
       "postcss-url": [
