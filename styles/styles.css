@@ -1166,10 +1166,11 @@ label.cost-min,
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: auto;
+  visibility: hidden;
 }
 
 .modal-open {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .modal {
