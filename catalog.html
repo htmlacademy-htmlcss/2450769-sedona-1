@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="/2450769-sedona-1/assets/favicon-4_P9buYQ.ico">
-    <link rel="stylesheet" crossorigin href="/2450769-sedona-1/assets/styles-bOjDE8HN.css">
+    <link rel="stylesheet" crossorigin href="/2450769-sedona-1/assets/styles-CW894ZBP.css">
   </head>
 
   <body>
@@ -30,7 +30,7 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-search" href="#">
+              <a class="navigation-user-link navigation-user-search" href="#open_modal">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
@@ -64,28 +64,50 @@
             <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
               <fieldset class="conveniences">
                 <legend class="conveniences-head">Инфраструктура:</legend>
-                <input type="checkbox" name="infrastructure" value="pool" id="pool_field" class="checkbox-square" checked>
-                <label for="pool_field">Бассейн</label>
-                <input type="checkbox" name="infrastructure" value="parking" id="parking_field" class="checkbox-square" checked>
-                <label for="parking_field">Парковка</label>
-                <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field" class="checkbox-square">
-                <label for="wifi_field">Wi-Fi</label>
+                <div class="checked-item">
+                  <input type="checkbox" name="infrastructure" value="pool" id="pool_field" class="checkbox-square" checked>
+                  <label for="pool_field">Бассейн</label>
+                </div>
+                <div class="checked-item">
+                  <input type="checkbox" name="infrastructure" value="parking" id="parking_field" class="checkbox-square" checked>
+                  <label for="parking_field">Парковка</label>
+                </div>
+                <div class="checked-item">
+                  <input type="checkbox" name="infrastructure" value="wifi" id="wifi_field" class="checkbox-square">
+                  <label for="wifi_field">Wi-Fi</label>
+                </div>
               </fieldset>
               <fieldset class="housing">
                 <legend class="housing-head">Тип жилья:</legend>
-                <input type="radio" name="hotel_type" value="hotel" id="hotel_field" checked>
-                <label for="hotel_field">Гостиница</label>
-                <input type="radio" name="hotel_type" value="motel" id="motel_field">
-                <label for="motel_field">Мотель</label>
-                <input type="radio" name="hotel_type" value="apartments" id="apartments_field">
-                <label for="apartments_field">Апартаменты</label>
+                <div class="checked-item">
+                  <input type="radio" name="hotel_type" value="hotel" id="hotel_field" class="radio" checked>
+                  <label for="hotel_field">Гостиница</label>
+                </div>
+                <div class="checked-item">
+                  <input type="radio" name="hotel_type" value="motel" id="motel_field" class="radio">
+                  <label for="motel_field">Мотель</label>
+                </div>
+                <div class="checked-item">
+                  <input type="radio" name="hotel_type" value="apartments" id="apartments_field" class="radio">
+                  <label for="apartments_field">Апартаменты</label>
+                </div>
               </fieldset>
               <fieldset class="cost">
                 <legend class="cost-head">Стоимость, ₽:</legend>
-                <label class="cost-min" for="cost_min">0</label>
-                <input type="number" id="cost_min" name="cost-min" placeholder="от" required>
-                <label class="cost-max" for="cost_max">9000</label>
-                <input type="number" id="cost_max" name="cost-max" placeholder="до" required>
+                <div class="rage-cost">
+                  <div class="rage-cost-item">
+                    <label for="cost_min">
+                      <input class="cost-min" type="number" id="cost_min" name="cost-min" placeholder="от" value="0" required>
+                      <span>от</span>
+                    </label>
+                  </div>
+                  <div class="rage-cost-item">
+                    <label for="cost_max">
+                      <input class="cost-max" type="number" id="cost_max" name="cost-max" placeholder="до" value="9000" required>
+                      <span>до</span>
+                    </label>
+                  </div>
+                </div>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
