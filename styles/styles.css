@@ -230,10 +230,13 @@ body {
 }
 
 .header-button {
+  font-size: 16px;
+  min-width: 92px;
   margin-right: 70px;
   color: #ffffff;
   background-color: #756157;
   padding: 8px 34px;
+  text-align: center;
 }
 
 .page-container {
@@ -372,7 +375,7 @@ body {
 }
 
 .infrastructure-item {
-  padding: 80px 85px;
+  padding: 80px 46px;
   width: 400px;
   background-repeat: no-repeat;
   background-position: center top 80px;
@@ -421,14 +424,29 @@ body {
 
 .search-description {
   margin: 0;
+  padding: 0 10px;
   padding-bottom: 54px;
 }
 
 .search-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   margin: 0 auto;
   color: #ffffff;
   background-color: #756157;
+}
+
+.subscribe {
+  background-image: url("../images/subscribe.jpg");
+  background-color: #82b3d3;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-title,
@@ -443,15 +461,7 @@ body {
 }
 
 .subscribe-description {
-  padding-bottom: 54px;
-}
-
-.subscribe {
-  background-image: url("../images/subscribe.jpg");
-  background-color: #82b3d3;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding: 96px 258px;
+  padding: 0 70px 54px;
 }
 
 .subscribe-form {
@@ -480,6 +490,12 @@ body {
 }
 
 .subscribe-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  text-transform: uppercase;
+  text-align: center;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
@@ -492,7 +508,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
   margin: 0 auto;
 }
 
@@ -721,6 +737,10 @@ input[type="radio"]:checked {
   margin-bottom: 16px;
 }
 
+.checked-item:last-child {
+  margin-bottom: 0;
+}
+
 .checked-item:hover {
   opacity: 0.6;
 }
@@ -855,7 +875,13 @@ input::-webkit-inner-spin-button {
   width: 191px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.filter-apply {
+  margin-top: 56px;
+  margin-bottom: 32px;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .found-container {
@@ -865,11 +891,15 @@ input::-webkit-inner-spin-button {
 }
 
 .found-head {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .found-number-housing {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-right: auto;
@@ -1023,6 +1053,8 @@ input::-webkit-inner-spin-button {
 }
 
 .housing-card-button {
+  font-size: 16px;
+  line-height: 125%;
   padding: 8px 0;
   color: #ffffff;
   text-align: center;
@@ -1092,13 +1124,6 @@ label {
 label.cost-min,
 .cost-max {
   color: #000000;
-}
-
-.filter-apply {
-  background-color: #82b3d3;
-  color: #ffffff;
-  margin-bottom: 32px;
-  margin-top: 45px;
 }
 
 .filter-reset {
