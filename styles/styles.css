@@ -27,7 +27,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-style: normal;
 }
 
@@ -35,6 +35,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .main {
@@ -295,7 +296,7 @@ body {
 
 .advantages-item {
   padding: 112px 85px 94px;
-  max-width: 230px;
+  width: 230px;
   min-height: 179px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
@@ -348,11 +349,14 @@ body {
 
 .advantages-text {
   padding: 103px 85px;
+  width: 230px;
 }
 
 .advantages-img {
   grid-column: span 2;
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .advantages-item:nth-child(even of:has(img)) img {
@@ -424,9 +428,16 @@ body {
 
 .search-description {
   margin: 0;
-  padding: 0 10px;
   padding-bottom: 54px;
 }
+
+/*
+перенос слов на новую строку вместо br
+.space::after {
+  content: "\A";
+  white-space: pre;
+}
+*/
 
 .search-button {
   font-family: inherit;
@@ -923,6 +934,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: center right 20px;
   background-size: 12px 7px;
+  background-color: #ffffff;
 }
 
 .select-control:hover {
@@ -1097,13 +1109,6 @@ input::-webkit-inner-spin-button {
   padding: 9px 22px 8px 23px;
 }
 
-.pagination {
-  display: flex;
-  list-style-type: none;
-  padding: 40px 70px 60px;
-  margin: 0;
-}
-
 legend {
   font-size: 20px;
   font-style: normal;
@@ -1139,6 +1144,13 @@ label.cost-min,
   color: #333333;
 }
 
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 40px 70px 60px;
+  margin: 0;
+}
+
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
@@ -1153,6 +1165,16 @@ label.cost-min,
   text-decoration: none;
   padding: 11px 0 12px;
   border-radius: 4px;
+}
+
+.pagination-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.pagination-over {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .pagination-item {
@@ -1188,7 +1210,7 @@ label.cost-min,
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
   overflow: auto;
   visibility: hidden;
 }
@@ -1204,6 +1226,7 @@ label.cost-min,
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-close-button {
@@ -1300,10 +1323,6 @@ label.cost-min,
   background-color: #f2f2f2;
 }
 
-.number-button:hover {
-  background-color: #e6e6e6;
-}
-
 .number-input:focus-visible {
   z-index: 2;
 }
@@ -1337,6 +1356,11 @@ label.cost-min,
 .number-button:hover::before {
   background-color: #000000;
   opacity: 1;
+}
+
+.number-button:active::before {
+  background-color: #756157;
+  opacity: 0.3;
 }
 
 .date-text {
@@ -1443,6 +1467,7 @@ label.cost-min,
 }
 
 /*
+  второй вариант как скрыть visually-hidden
 .visually-hidden {
   position: absolute;
   width: 1px;
