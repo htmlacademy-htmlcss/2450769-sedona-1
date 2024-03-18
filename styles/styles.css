@@ -39,9 +39,10 @@ body {
 }
 
 .main {
-  background: linear-gradient(to right, #82b3d3, #756157);
-  background-image: url("../images/filtr.jpg");
-  background-size: 100% auto;
+  background-image:
+    url("../images/filter.jpg"),
+    linear-gradient(to right, #82b3d3, #756157);
+  background-size: cover, auto;
   background-repeat: no-repeat;
   display: block;
   padding: 35px 70px 70px;
@@ -243,34 +244,33 @@ body {
   text-align: center;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .hero {
   position: relative;
+  display: grid;
+  row-gap: 25px;
+  padding: 51px 70px;
+  background-color: #23363c;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 69px;
+  color: #ffffff;
+  text-align: center;
 }
 
 .hero::after {
-  position: absolute;
+  content: "";
   width: 1200px;
   height: 57px;
-  margin: 0;
+  margin-bottom: -51px;
+  margin-inline: -70px;
   background-image: url("../images/icons/divider.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  content: "";
-  bottom: -1px;
 }
 
 .hero-img {
-  display: flex;
-  padding: 51px 371px 82px;
+  margin: 0 auto;
   width: 458px;
 }
 
@@ -337,7 +337,7 @@ body {
   content: "";
 }
 
-.advantages-item:not(img) > .advantages-title::before {
+.advantages-item:not(:has(.advantages-img)) > .advantages-title::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -350,7 +350,7 @@ body {
   padding-top: 30px;
 }
 
-.advantages-item:has(img) {
+.advantages-item:has(.advantages-img) {
   grid-column: span 3;
   display: grid;
   grid-template-columns: subgrid;
@@ -371,7 +371,7 @@ body {
   width: 100%;
 }
 
-.advantages-item:nth-child(even of:has(img)) img {
+.advantages-item:nth-child(even of:has(.advantages-img)) .advantages-img {
   order: -1;
 }
 
@@ -1131,7 +1131,7 @@ input::-webkit-inner-spin-button {
   padding: 9px 22px 8px 23px;
 }
 
-legend {
+.legend {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1140,7 +1140,7 @@ legend {
   color: #ffffff;
 }
 
-label {
+.label {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1148,7 +1148,7 @@ label {
   color: #ffffff;
 }
 
-label.cost-min,
+.cost-min,
 .cost-max {
   color: #000000;
 }
@@ -1496,8 +1496,13 @@ label.cost-min,
   border-radius: 10px;
 }
 
-
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
